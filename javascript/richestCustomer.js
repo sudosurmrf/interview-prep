@@ -7,7 +7,7 @@
 const richestCustomer = (accounts) => {
   let richest = 0;
   for(let i = 0; i<accounts.length; i++){
-    let temp = 0;
+    let temp = 0;3
     for(let j = 0; j<accounts[i].length; j++){
       temp += accounts[i][j]
     }
