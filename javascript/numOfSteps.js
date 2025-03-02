@@ -30,5 +30,25 @@ const numOfStepsBitmask = (num) => {
   }
   return steps
 }
-console.log(numOfSteps(8))
-console.log(numOfStepsBitmask(8))
+// console.log(numOfSteps(8))
+// console.log(numOfStepsBitmask(8))
+
+// given an integer num, return the number of steps to reduce it to zero.
+
+// in one step, if the current number is even, you must divide it by 2. Otherwise, you must subtract 1 from it. 
+
+
+const reduceMe = (num) => {
+  let steps = 0;
+  while(num > 0){
+    if((num & 1)===0){
+      num >>= 1;
+    } else {
+      num --
+    }
+    steps ++
+  }
+  return steps;
+}
+
+console.log(reduceMe(8))
