@@ -1,8 +1,11 @@
-const runningSum = (nums) => {
-  for(let i=1; i<nums.length; i++){
-    nums[i] += nums[i -1]
-  }
-  return nums
-}
+const nums = [3,4,54,5,6,7,78]
 
-console.log(runningSum([3,1,2,10,1]))
+// for(const num of nums){
+//   console.log('of loop',num);
+// }
+
+// for(const num in nums){
+//   console.log('in loop', num);
+// }
+
+console.log(nums.0)
