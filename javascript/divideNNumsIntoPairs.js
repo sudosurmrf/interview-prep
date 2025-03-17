@@ -32,7 +32,8 @@ const divideArray = (nums) => {
     }
   }
   for(const key in hashMap){
-    if(hashMap[key] === 1) return false
+    if(hashMap[key] & 1 === 1) return false
   }
   return true;
 }
+
