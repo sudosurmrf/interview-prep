@@ -40,3 +40,9 @@ const checkIfInstanceOf =(obj, classFunction) => {
   }
   return false;
 }
+
+const myArr = [1,2,3]
+
+console.log(checkIfInstanceOf(myArr, Object)) //true
+console.log(checkIfInstanceOf(myArr, Array)) //true
+console.log(checkIfInstanceOf(myArr, Number)) //false
