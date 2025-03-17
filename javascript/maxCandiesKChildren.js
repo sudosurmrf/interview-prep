@@ -33,6 +33,12 @@ const maximumCandies = (candies, k) => {
     const mid = Math.floor((low + high) / 2);
     let count = 0;
     for(let i =0; i< len; i++){
+      //in this for loop, we are checking the value of "mid" which represents the max number of candies that can
+      //be given evenly to each person. If the value of count is less than "k", we need to reduce the number of
+      //candies to give to each person (high = mid - 1) otherwise we can keep attempting to increase the candies 
+      //the "count" represents the total amount of people that can be split with the current value of "mid".
+      //so again, if you need to check "k" against count, you are checking that atleast "k" people can split "mid" amount 
+      //of candies evenly by comparing "count" >= to "k". 
       count += Math.floor(candies[i]/ mid);
       // if(count >= k) break; this might be faster but im not totally sure
     }
