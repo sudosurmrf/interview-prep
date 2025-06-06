@@ -45,4 +45,31 @@ return maxLength;
 }
 
 
-console.log(zeroSumSub([4, 4, -7, 1, 3, 3, 1, -4]))
+// console.log(zeroSumSub([4, 4, -7, 1, 3, 3, 1, -4]))
+
+
+const newZeroSum = (nums) => {
+
+  if(nums.length < 0) return 0;
+  
+  const sumMap = new Map();
+  //need to set this so that we can begin counting index locations from the first indexed spot of 0.
+  sumMap.set(0,-1);
+  let maxLength = 0;
+  let runningTotal = 0;
+
+  for(let i=0; i<nums.length; i++){
+    runningTotal += nums[i]
+    if(sumMap.has(runningTotal)){
+      const length = i - sumMap.get(runningTotal);
+      maxLength = maxLength < length ? length : maxLength;
+      //this log will tell us the subarray positions that sum 0.
+      console.log([sumMap.get(runningTotal), i]);
+    }else {
+      sumMap.set(runningTotal, i);
+    }
+  }
+  return maxLength
+}
+
+console.log(newZeroSum([4, 4, -7, 1, 2, 3, 1, -4]))
