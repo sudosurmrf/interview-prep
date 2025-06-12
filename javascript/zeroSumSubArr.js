@@ -50,7 +50,7 @@ return maxLength;
 
 const newZeroSum = (nums) => {
 
-  if(nums.length < 0) return 0;
+  if(nums.length < 1) return 0;
   
   const sumMap = new Map();
   //need to set this so that we can begin counting index locations from the first indexed spot of 0.
@@ -73,3 +73,5 @@ const newZeroSum = (nums) => {
 }
 
 console.log(newZeroSum([4, 4, -7, 1, 2, 3, 1, -4]))
+
+
