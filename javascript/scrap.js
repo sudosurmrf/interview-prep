@@ -11,3 +11,4 @@ console.log(idxMap.find("name"))
 console.log(idxMap.includes('name'))
 
 //ok
+//test 2
