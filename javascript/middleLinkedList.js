@@ -30,4 +30,4 @@ const arrayToLinkedList = (arr) => {
 const arr = [1,2,3,4,5]
 
 const head = arrayToLinkedList(arr)
-console.log(middleOfLinkedList(head))
+console.log(middleOfLinkedList(arr))

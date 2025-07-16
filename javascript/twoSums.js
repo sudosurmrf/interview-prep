@@ -1,3 +1,11 @@
+// Two Sum
+// Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+// You may assume that:
+// Exactly one valid answer exists.
+// You may not use the same element twice.
+// You can return the answer in any order.
+
+
 const twoSum = (nums, target) => {
   const hashMap = {};
   for(const [index, value] of nums.entries()){
