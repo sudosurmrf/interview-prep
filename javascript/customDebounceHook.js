@@ -5,7 +5,7 @@
 // Clean up timers when the component unmounts or value/delay changes.
 
 // Support changing the delay at runtime.
-export const useDebouncedValue = async(val, delay) => {
+export const useDebouncedValue = (val, delay) => {
   
   const [debouncedVal, setDebouncedVal] = useState(val);
 
