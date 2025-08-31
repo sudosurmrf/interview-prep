@@ -12,8 +12,8 @@ const solution = (romanNum) => {
   const romanArray = romanNum.split('');
   let total = 0;
   for(let i =0; i<romanArray.length; i++) {
-    if(romans[romanArray[i]] < romans[romanArray[i + 1]] && romanArray[i + 1] !== undefined) {
-      total += (romans[romanArray[i + 1]] - romans[romanArray[i]])
+    if(romans[romanArray[i]] < romans[romanArray[i + 1]]) {
+      total += romans[romanArray[i + 1]] - romans[romanArray[i]]
       i++
     } else {
        total +=  romans[romanArray[i]] 
@@ -22,4 +22,4 @@ const solution = (romanNum) => {
   return total
 }
 
-console.log(solution("MXCIX"))
+console.log(solution("MXCIV"))
