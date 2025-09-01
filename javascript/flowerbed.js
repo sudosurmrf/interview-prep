@@ -41,3 +41,21 @@ const answer = (flowerbed, n) => {
 };
 
 
+
+
+
+const flowerBeds = (flowerbed, n) => {
+  let lastFlowerIndex = -2;
+  let count = 0;
+  for(let i=0; i<flowerbed.length; i++){
+    if(flowerbed[i] === 1) {
+      lastFlowerIndex = i
+    }
+    if(i > (lastFlowerIndex + 1) && flowerbed[i] === 0 && flowerbed[i + 1]  !== 1) {
+      flowerbed[i] = 1;
+      lastFlowerIndex = i;
+      count++
+    }
+  }
+  return count >= n;
+}
