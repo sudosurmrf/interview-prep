@@ -81,6 +81,7 @@ const minOperationsV2 = (nums, k) => {
   return distinct.size + (k < minVal ? 0 : -1);
 };
 
+//O(n) solution - this and above are best, but above is slightly more efficient because it doesn't use the spread operator. 
 const minOperationsV3 = (nums, k) => {
   let minVal = Math.min(...nums);
   const distinct = new Set(nums);
