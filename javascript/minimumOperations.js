@@ -38,6 +38,7 @@
 // The array already contains distinct elements. Therefore, the answer is 0.
 
  
+//this solution is O(n^2) not good
 const minimumOperations = (nums) => {
   let count = 0;
   for (let i = nums.length; i > 0; i--) {
@@ -52,6 +53,7 @@ const minimumOperations = (nums) => {
   return count;
 }
 
+//this solutiong is O(n)
 const minimumOperationsV2 = (nums) => {
   const n = nums.length;
   const seen = new Set();
