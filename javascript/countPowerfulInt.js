@@ -86,5 +86,3 @@ const numberOfPowerfulInt = (start, finish, limit, suffix) => {
   return validInRange;
 };
 console.log(numberOfPowerfulInt(20,1159, 5, "20"));
-
-console.log('5' < '10')
