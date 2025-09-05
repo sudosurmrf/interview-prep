@@ -10,3 +10,11 @@ const getUniquesInArr = (valueArr) => {
 }
 
 console.log('only unique values from original array => ', getUniquesInArr([1,1,1,2,3,4,6,7,7,7,8,9,10]));
+
+//digit dynamic programming:
+
+const dp = (pos, tight) => {
+  if(tight) {
+    
+  }
+}
