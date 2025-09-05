@@ -40,7 +40,7 @@ const countSymmetricIntegers = (low, high) => {
   return count;
 };
 
-countSymmetricIntegers(1, 1000);
+// countSymmetricIntegers(1, 1000);
 
 
 //dynamic dfs solution. works better for when values are 10^4 and higher.
@@ -98,20 +98,3 @@ const countSymmetricIntegersV2 = (low, high) => {
 };
 
 
-
-
-const capitalizeEveryOther = (str) => {
-  let capital = false;
-  let newStr = '';
-  for(let letter of str) {
-    if(capital) {
-      newStr += letter.toUpperCase();
-    } else {
-      newStr += letter;
-    }
-    capital = !capital;
-  }
-  return newStr;
-}
-
-console.log(capitalizeEveryOther('mississippi'));
