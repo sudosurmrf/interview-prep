@@ -98,22 +98,5 @@ const countSymmetricIntegersV2 = (low, high) => {
 };
 
 
-Document.prototype.myGetElementById = function (id) {
-  const map = new Map();
-  function oneLevelDeeper (node) {
-    for(const nodes in node) {
-      if(map.has(nodes)){
-        map.get(nodes)
-      } else {
-        map.set(nodes, nodes);
-      }
-      if(nodes.id === id) {
-        return nodes;
-      } else {
-        oneLevelDeeper(nodes);
-      }
-    }
-  }
-   return oneLevelDeeper(this);
-}
+
 
