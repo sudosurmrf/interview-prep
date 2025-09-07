@@ -100,3 +100,4 @@ const countSymmetricIntegersV2 = (low, high) => {
 
 
 
+console.log('helllo')
